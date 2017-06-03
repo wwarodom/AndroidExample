@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00897b"
+        android:padding="32dp"
+        android:id="@+id/b1"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="B1"/>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5677fc"
+        android:padding="32dp"
+        android:id="@+id/b2"
+        android:layout_below="@id/b1"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="B2"/>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e91e63"
+        android:padding="32dp"
+        android:id="@+id/b3"
+        android:layout_below="@id/b2"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="B3"/>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff6f00"
+        android:padding="32dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/b4"
+        android:text="B4"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
