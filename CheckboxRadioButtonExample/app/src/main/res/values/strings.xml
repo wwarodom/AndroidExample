@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CheckboxRadioButtonExample</string>
+    <string name="ninjas">ninjas</string>
+    <string name="pirates">pirates</string>
+    <string name="meat">meat</string>
+    <string name="cheese">cheese</string>
+</resources>
