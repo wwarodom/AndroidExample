@@ -22,48 +22,32 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.list);
 
         // Defined Array values to show in ListView
-        String[] values = new String[] { "Android List View",
-                "Adapter implementation",
-                "Simple List View In Android",
-                "Create List View Android",
-                "Android Example",
-                "List View Source Code",
-                "List View Array Adapter",
-                "Android Example List View"
+        String[] values = new String[] { "Item 1: Android",
+                "Item 2: iPhone ",
+                "Item 3: Windows Phone",
+                "Item 4: Custom Phone"
         };
 
         // Define a new Adapter
         // First parameter - Context
         // Second parameter - Layout for the row
-        // Third parameter - ID of the TextView to which the data is written
+        // Third parameter - ID of the TextView to which the data is written (related to layout)
         // Forth - the Array of data
-
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1 , android.R.id.text1 , values);
-
-
-        // Assign adapter to ListView
         listView.setAdapter(adapter);
 
-        // ListView Item Click Listener
+        //position starting from 0
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                System.out.println("Click list!!");
-
-                // ListView Clicked item index
-                int itemPosition     = position;
-
-                // ListView Clicked item value
                 String  itemValue    = (String) listView.getItemAtPosition(position);
-
-                // Show Alert
+                System.out.println("Position :"+ position+"  ListItem : " +itemValue);
                 Toast.makeText(getApplicationContext(),
-                        "Position :"+itemPosition+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
+                        "Position :"+ position+"  ListItem : " +itemValue , Toast.LENGTH_LONG)
                         .show();
-
             }
 
         });
