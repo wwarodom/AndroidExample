@@ -18,7 +18,7 @@
     <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:name="com.warodom.fragmentexample.HomeFragment"
+        android:name="com.warodom.fragmentexample.OrderListFragment"
         android:id="@+id/fragment_order_list"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
