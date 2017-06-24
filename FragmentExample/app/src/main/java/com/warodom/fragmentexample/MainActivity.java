@@ -2,7 +2,12 @@ package com.warodom.fragmentexample;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,7 +16,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_order_list);
-        OrderListFragment orderListFragment = (OrderListFragment) fragment;
+        startBlankFragment();
+
+        startJavaFragment();
+    }
+
+    private void startJavaFragment() {
+        JavaFragment fragment = new JavaFragment();
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.javaFragment, fragment);
+        transaction.commit();
+    }
+
+    private void startBlankFragment() {
+        BlankFragment blankFragment = (BlankFragment) getSupportFragmentManager().findFragmentById(R.id.blankFragment );
+        TextView tvf1 =  (TextView) blankFragment.getView().findViewById(R.id.tvf1);
+        tvf1.setText("Foo bar.....");
     }
 }
