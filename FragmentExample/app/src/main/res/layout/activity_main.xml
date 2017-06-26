@@ -9,16 +9,15 @@
         <fragment
             android:id="@+id/blankFragment"
             android:name="com.warodom.fragmentexample.BlankFragment"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout="@layout/fragment_blank"
-  />
-
+            tools:layout="@layout/fragment_blank"  />
 
         <FrameLayout
             android:id="@+id/javaFragment"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/blankFragment">
         </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
