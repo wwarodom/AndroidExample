@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SqlLite</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="get">Get</string>
+    <string name="title_activity_edit_message">EditMessageActivity</string>
+    <string name="message">Message</string>
+</resources>
