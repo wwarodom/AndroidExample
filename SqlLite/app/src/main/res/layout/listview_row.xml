@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#990099"
+    android:background="#66FF99"
     android:gravity="center_vertical"
     android:orientation="horizontal">
 
@@ -44,7 +44,8 @@
         android:layout_height="wrap_content"
         android:minHeight="0dp"
         android:minWidth="0dp"
-        android:text="@string/get"/>
+        android:focusable="false"
+        android:background="@android:drawable/ic_input_get"  />
 
     <Button
         app:layout_constraintLeft_toRightOf="@id/btnGet"
@@ -54,7 +55,8 @@
         android:layout_height="wrap_content"
         android:minHeight="0dp"
         android:minWidth="0dp"
-        android:text="@string/delete"/>
+        android:focusable="false"
+        android:background="@android:drawable/ic_delete"  />
 
     <Button
         app:layout_constraintLeft_toRightOf ="@id/btnDelete"
@@ -64,6 +66,7 @@
         android:layout_height="wrap_content"
         android:minHeight="0dp"
         android:minWidth="0dp"
-        android:text="@string/edit"/>
+        android:focusable="false"
+        android:background="@android:drawable/ic_menu_edit"    />
 
 </android.support.constraint.ConstraintLayout>

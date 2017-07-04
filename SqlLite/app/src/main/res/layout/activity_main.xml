@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#FFFFFF"
-tools:context="com.warodom.sqllite.MainActivity" >
-
-
-<ListView
-    android:id="@+id/listView1"
-    android:background="#FFFFFF"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"  />
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.warodom.sqllite.MainActivity">
+
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF" />
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_below="@id/listView1"
-        android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/listView1"
         android:background="#113355"
-        android:textColor="#FFFFFF"
-        android:text="@string/add"/>
+        android:text="@string/add"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

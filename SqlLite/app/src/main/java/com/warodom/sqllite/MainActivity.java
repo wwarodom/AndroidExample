@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     CustomAdapter adapter;
 
     ArrayList<Board> boards;
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
 //        mHelper.onUpgrade(mDb, 1, 1);
         boards = new ArrayList<Board>();
         boards = mHelper.getAllMessages();
+
+        listView = (ListView) findViewById(R.id.listView1);
         loadBoard2List(boards);
 
         Button btnAdd = (Button) findViewById(R.id.btnAdd);
@@ -46,6 +50,17 @@ public class MainActivity extends AppCompatActivity {
                 mHelper.addMessage(new Board("title3","NewName","New message ja"));
                 boards = mHelper.getAllMessages();
                 adapter.updateAdapter(boards);
+            }
+        });
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                System.out.println("Hello click");
+                Board selectBoard =  (Board)parent.getAdapter().getItem(position);
+                Board b1 =  mHelper.getMessage(selectBoard.getId());
+                Toast.makeText(MainActivity.this, b1.toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -67,10 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadBoard2List(ArrayList<Board> boards) {
-//        adapter = new CustomAdapter(getApplicationContext(), boards, mHelper);
         adapter = new CustomAdapter(getApplicationContext(), boards, mHelper, MainActivity.this);
-        System.out.println("Adapter " + adapter.getCount());
-        ListView listView = (ListView) findViewById(R.id.listView1);
         listView.setAdapter(adapter);
     }
 }
