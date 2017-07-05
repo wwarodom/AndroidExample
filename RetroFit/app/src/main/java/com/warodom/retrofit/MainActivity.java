@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initializeView();
+        initializeInstance();
         httpManager = HttpManager.getInstance();
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void initializeView() {
+    private void initializeInstance() {
         edtName = (EditText) findViewById(R.id.edtName);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         tvDisplay = (TextView) findViewById(R.id.tvDisplay);
