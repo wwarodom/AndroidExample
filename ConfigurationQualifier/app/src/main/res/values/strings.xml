@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ConfigurationQualifier</string>
+    <string name="hello_world_portrait">Hello World Portrait</string>
+</resources>
