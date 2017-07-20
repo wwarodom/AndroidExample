@@ -32,4 +32,9 @@ public class Actor {
         this.resId = resId;
     }
 
+
+    @Override
+    public String toString() {
+        return getName() + ": " ;
+    }
 }
