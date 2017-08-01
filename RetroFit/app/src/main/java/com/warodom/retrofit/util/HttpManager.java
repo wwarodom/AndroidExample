@@ -1,7 +1,5 @@
 package com.warodom.retrofit.util;
 
-import android.content.Context;
-
 import com.warodom.retrofit.service.GitHubService;
 
 import retrofit2.Retrofit;
@@ -20,11 +18,11 @@ public class HttpManager {
         return instance;
     }
 
-    private Context mContext;
+//    private Context mContext;
     private GitHubService service;
 
     private HttpManager() {
-        mContext = Contextor.getInstance().getContext();
+//        mContext = Contextor.getInstance().getContext();
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.github.com/")   // MUST end url with '/'

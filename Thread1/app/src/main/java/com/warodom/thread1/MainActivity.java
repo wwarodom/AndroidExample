@@ -8,6 +8,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView tvNum;
+    MyTask myTask;
     int i = 0;
 
     @Override
@@ -15,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tvNum = (TextView) findViewById(R.id.tvNum);
-        new MyTask().execute("My String");
-
+        myTask = new MyTask();
+        myTask.execute("My String");
     }
 
 
@@ -26,13 +27,14 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             // get the string from params, which is an array
             String myString = params[0];
-            while( i < 5 )
+            while( i < 50 )
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 System.out.println(i++);
                 publishProgress(i);
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                return "Thread End";
             }
             return "pass to onPostExecute: " + i;
         }
@@ -53,5 +55,11 @@ public class MainActivity extends AppCompatActivity {
             super.onProgressUpdate(values);
             tvNum.setText(String.valueOf(values[0]));
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        myTask.cancel(true);
     }
 }
