@@ -19,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
                 , R.drawable.cidhighwind, R.drawable.cloudstrife
                 , R.drawable.redxiii, R.drawable.sephiroth
                 , R.drawable.tifalockhart, R.drawable.vincentvalentine
-                , R.drawable.yuffiekisaragi, R.drawable.zackfair };
+                , R.drawable.yuffiekisaragi, R.drawable.zackfair
+        };
 
         String[] list = { "Aerith Gainsborough", "Barret Wallace", "Cait Sith"
                 , "Cid Highwind", "Cloud Strife", "RedXIII", "Sephiroth"
                 , "Tifa Lockhart", "Vincent Valentine", "Yuffie Kisaragi"
-                , "ZackFair" };
+                , "ZackFair"
+        };
 
         CustomAdapter adapter = new CustomAdapter(getApplicationContext(), list, resId);
 
