@@ -152,6 +152,8 @@ public class MainActivity extends AppCompatActivity implements OnCompleteListene
             return;
         }
         addGeofences();
+        Toast.makeText(this, "Click Added", Toast.LENGTH_SHORT).show();
+
     }
 
     /**

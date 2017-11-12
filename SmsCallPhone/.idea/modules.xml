@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SmsCallPhone.iml" filepath="$PROJECT_DIR$/SmsCallPhone.iml" />
+      <module fileurl="file://D:\android\androidExample\SmsCallPhone\SmsCallPhone.iml" filepath="D:\android\androidExample\SmsCallPhone\SmsCallPhone.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\android\androidExample\SmsCallPhone\app\app.iml" filepath="D:\android\androidExample\SmsCallPhone\app\app.iml" />
     </modules>
   </component>
 </project>

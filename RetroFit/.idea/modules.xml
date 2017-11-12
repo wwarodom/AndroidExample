@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RetroFit.iml" filepath="$PROJECT_DIR$/RetroFit.iml" />
+      <module fileurl="file://D:\android\androidExample\RetroFit\RetroFit.iml" filepath="D:\android\androidExample\RetroFit\RetroFit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\android\androidExample\RetroFit\app\app.iml" filepath="D:\android\androidExample\RetroFit\app\app.iml" />
     </modules>
   </component>
 </project>

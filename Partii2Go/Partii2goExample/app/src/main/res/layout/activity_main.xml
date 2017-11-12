@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nectecspeech2.partii2goexample.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/party_logo"
+            android:layout_above="@+id/text_result"
+            android:layout_below="@+id/btn_download" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_start"
+            android:layout_alignBottom="@+id/btn_start"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="66dp"
+            android:text="หยุดพูด" />
+
+        <EditText
+            android:id="@+id/edt_apikey"
+            android:text="2go-SkeTUPXy6X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/btn_download"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="Download" />
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="ระบบรู้จำเสียงพูดภาษาไทยพาที"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            tools:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เริ่มพูด"
+            android:layout_marginTop="62dp"
+            android:layout_below="@+id/text_result"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="86dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
