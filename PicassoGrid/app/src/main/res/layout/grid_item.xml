@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/grid_item"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:scaleType="centerCrop"/>
 
 </FrameLayout>

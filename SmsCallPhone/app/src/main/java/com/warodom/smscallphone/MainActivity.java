@@ -184,6 +184,11 @@ public class MainActivity extends AppCompatActivity {
         String url = "tel:5556";
         Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(url));
         try {
+            if (ActivityCompat.checkSelfPermission(this,
+                    Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                System.out.println("Not allowed");
+                return;
+            }
             startActivity(intent);
         } catch (Exception e) {
             e.printStackTrace();

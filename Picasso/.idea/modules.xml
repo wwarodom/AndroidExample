@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Picasso.iml" filepath="$PROJECT_DIR$/Picasso.iml" />
-      <module fileurl="file://D:\android\androidExample\Picasso\Picasso.iml" filepath="D:\android\androidExample\Picasso\Picasso.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\android\androidExample\Picasso\app\app.iml" filepath="D:\android\androidExample\Picasso\app\app.iml" />
     </modules>
   </component>
 </project>

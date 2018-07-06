@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PicassoGrid.iml" filepath="$PROJECT_DIR$/PicassoGrid.iml" />
-      <module fileurl="file://D:\android\androidExample\PicassoGrid\PicassoGrid.iml" filepath="D:\android\androidExample\PicassoGrid\PicassoGrid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\android\androidExample\PicassoGrid\app\app.iml" filepath="D:\android\androidExample\PicassoGrid\app\app.iml" />
     </modules>
   </component>
 </project>
